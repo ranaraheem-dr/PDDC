@@ -36,7 +36,45 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repositorygh repo clone ranaraheem-dr/PDDC
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pediatric Dose Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Pediatric Dose Calculator</h1>
+    <input type="search" id="search" placeholder="Search medications...">
+    <select id="category">
+      <option value="all">All</option>
+      <option value="rehydration">Rehydration</option>
+      <option value="maintenance">Maintenance</option>
+      <option value="resuscitation">Resuscitation</option>
+      <option value="pain relief">Pain relief</option>
+      <option value="antibiotics">Antibiotics</option>
+    </select>
+    <button id="calculate">Calculate dose</button>
+    <table id="medications">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Dose</th>
+          <th>Frequency</th>
+          <th>Formula</th>
+          <th>Category</th>
+          <th>Indications</th>
+        </tr>
+      </thead>
+      <tbody id="medications-body">
+      </tbody>
+    </table>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
           path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
