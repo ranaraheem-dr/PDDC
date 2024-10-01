@@ -1,0 +1,27 @@
+{
+  "name": "Pediatric Dose Calculator",
+  "version": "1.0",
+  "description": "An initiative by Dr Rana Raheem to aid the First Responders in ER",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "190x190",
+      "type": "image/png"
+    }
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f9f9f9",
+  "theme_color": "#f0f0f0"
+}
